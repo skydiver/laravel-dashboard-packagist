@@ -38,7 +38,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Skydiver\\LaravelDashboardpackagist\\PackagistTileServiceProvider"
+        "Skydiver\\LaravelDashboardPackagist\\PackagistTileServiceProvider"
       ]
     }
   },

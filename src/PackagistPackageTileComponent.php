@@ -6,7 +6,6 @@ class PackagistPackageTileComponent extends BaseComponent
 {
     public $position;
     public $package;
-    public $type;
     public $cacheTimeout;
     public $forceRefresh;
     public $showLogo;
@@ -16,19 +15,20 @@ class PackagistPackageTileComponent extends BaseComponent
     public function mount(
         string $position,
         string $package,
-        string $type = null,
         int $cacheTimeout = null,
         bool $forceRefresh = false,
         bool $showLogo = true
     ) {
         $this->position = $position;
         $this->package = $package;
-        $this->type = $type;
         $this->cacheTimeout = $cacheTimeout;
         $this->forceRefresh = $forceRefresh;
         $this->showLogo = $showLogo;
 
-        $this->packageInfo = $this->fetchPackageDownloads();
+        $this->packageInfo = $this->fetchPackageInfo();
+
+        dd($this->packageInfo);
+
     }
 
     public function render()
