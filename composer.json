@@ -1,11 +1,11 @@
 {
-  "name": "skydiver/laravel-dashboard-npm",
-  "description": "Show npm packages stats",
+  "name": "skydiver/laravel-dashboard-packagist",
+  "description": "Show Packagist package stats",
   "keywords": [
     "skydiver",
-    "laravel-dashboard-npm"
+    "laravel-dashboard-packagist"
   ],
-  "homepage": "https://github.com/skydiver/laravel-dashboard-npm",
+  "homepage": "https://github.com/skydiver/laravel-dashboard-packagist",
   "license": "MIT",
   "authors": [
     {
@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Skydiver\\LaravelDashboardNpm\\": "src"
+      "Skydiver\\LaravelDashboardPackagist\\": "src"
     }
   },
   "scripts": {
@@ -38,7 +38,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Skydiver\\LaravelDashboardNpm\\NpmTileServiceProvider"
+        "Skydiver\\LaravelDashboardpackagist\\PackagistTileServiceProvider"
       ]
     }
   },

@@ -1,8 +1,8 @@
 <?php
 
-namespace Skydiver\LaravelDashboardNpm;
+namespace Skydiver\LaravelDashboardPackagist;
 
-class NpmPackageTileComponent extends BaseComponent
+class PackagistPackageTileComponent extends BaseComponent
 {
     public $position;
     public $package;
@@ -33,6 +33,6 @@ class NpmPackageTileComponent extends BaseComponent
 
     public function render()
     {
-        return view('dashboard-npm-tile::package-tile');
+        return view('dashboard-packagist-tile::package-tile');
     }
 }
