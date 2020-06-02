@@ -26,9 +26,6 @@ class PackagistPackageTileComponent extends BaseComponent
         $this->showLogo = $showLogo;
 
         $this->packageInfo = $this->fetchPackageInfo();
-
-        dd($this->packageInfo);
-
     }
 
     public function render()
